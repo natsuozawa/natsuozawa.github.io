@@ -1,0 +1,159 @@
+$black: #262626;
+$link: #a07318;
+$link-hover: #664d04;
+$light: #f4f6f8;
+$dark-gray: #666;
+
+body {
+  font-family: 'Noto Sans Japanese', 'Noto Sans JP', sans-serif;
+  margin: 0;
+  color: $black;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  background-color: white;
+}
+
+h1, h2, h3, p, li {
+  font-weight: 100;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+a:hover {
+  color: $link-hover;
+}
+
+hr {
+  width: 5%;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: auto;
+}
+
+//text types
+@media only screen and (min-width: 410px) and (min-height: 350px) {
+  .giant {
+    font-size: 64px;
+  }
+
+  .big {
+    font-size: 48px;
+  }
+
+  .message {
+    font-size: 24px;
+  }
+
+  .icon {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media only screen and (max-width: 410px), only screen and (max-height: 350px) {
+  .giant {
+    font-size: 48px;
+  }
+
+  .big {
+    font-size: 36px;
+  }
+
+  .message {
+    font-size: 20px;
+  }
+
+  .icon {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+.bold-text {
+  font-weight: 400;
+}
+
+//icons
+.down {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-position: center;
+}
+
+.down:hover {
+  transform: translateY(3px);
+}
+
+.down:active {
+  transform: translateY(8px);
+}
+
+//div types
+.component {
+  width: 95%;
+  margin: auto;
+}
+
+.box {
+  padding: 20px;
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.blackbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: table-cell;
+  vertical-align: middle;
+  height: inherit;
+  width: 100vw;
+  color: white;
+  padding: 0 2.5%;
+}
+
+.banner {
+  height: calc(100vh - 80px);
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  .down {
+    margin: auto;
+    background-image: url('../thumbnail/down-white.png');
+  }
+
+  @media only screen and (max-height: 240px) {
+    .down {
+      display: none;
+    }
+  }
+}
+
+.last {
+  text-align: center;
+  background-attachment: fixed;
+  height: 400px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+}

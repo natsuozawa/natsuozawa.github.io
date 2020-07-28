@@ -1,0 +1,145 @@
+@import '_universal';
+@import '_header';
+@import '_footer';
+
+.down {
+  background-image: url('thumbnail/down.png');
+}
+
+#main {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 50px;
+
+  .left {
+    p {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 24px;
+    }
+
+    h1, p {
+      padding-left: 20px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:hover {
+      color: $link;
+    }
+
+    .down {
+      position: relative;
+      top: 20px;
+    }
+  }
+
+  .right {
+    background-image: url('thumbnail/developer.png');
+    background-position: left top;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .left, .right {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .left {
+      width: 45%;
+      height: calc(100vh - 80px);
+    }
+
+    .left > div {
+      padding-top: 25vh;
+
+      .down {
+        left: 35%;
+      }
+    }
+
+    .right {
+      width: 54%;
+      height: calc(100vh - 100px);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .left {
+      height: calc(40vh - 40px);
+      width: 100%;
+    }
+
+    .left > div {
+      padding-top: 5vh;
+      
+      .down {
+        display: none;
+      }
+    }
+
+    .right {
+      height: calc(70vh - 110px);
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (max-height: 575px) {
+    .right {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 310px) and (max-height: 710px) {
+    .right {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    .left > div {
+      padding-top: 5vh;
+    }
+  }
+
+  @media only screen and (max-height: 450px) {
+    .down {
+      display: none;
+    }
+  }
+}
+
+#introduction {
+  padding-bottom: 50px;
+
+  .box-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 40px;
+    text-indent: 24px;
+  }
+
+  svg {
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: $dark-gray;
+  }
+}
+
+#see {
+  background-image: url('thumbnail/pencil.jpg');
+  background-position: center;
+}

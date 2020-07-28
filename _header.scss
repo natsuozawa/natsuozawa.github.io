@@ -1,0 +1,43 @@
+$black: #262626;
+$link: #a07318;
+
+#header-wrap {
+  background-color: white;
+  padding-bottom: 20px;
+  height: 60px;
+}
+
+#header {
+  width: 95%;
+  border-bottom: 2px solid $black;
+  margin: 0 auto;
+  padding-top: 9px;
+
+  a {
+    color: inherit;
+  }
+
+  #header-name {
+    font-weight: 100;
+    margin: 0;
+    width: 220px;
+    text-align: center;
+  }
+
+
+  @media only screen and (min-width: 650px) {
+    #header-name {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width: 310px) {
+    #header-name {
+      display: inline-block;
+    }
+
+    .nav {
+      display: none;
+    }
+  }
+}

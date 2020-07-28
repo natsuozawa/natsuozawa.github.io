@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Natsu Ozawa">
+  <link href="../thumbnail/logo.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet"> 
+  <style>
+  body, h1, p {
+    margin: 0;
+  }
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Noto Sans Japanese', sans-serif;
+  }
+
+  h1 {
+    font-size: 72px;
+    font-weight: 100;
+  }
+
+  p, li {
+    font-size: 24px;
+    font-weight: 100;
+  }
+
+  @media only screen and (min-width: 800px) and (min-height: 500px) {
+    h1 {
+      font-size: 96px;
+    }
+  }
+
+  .class > div {
+    text-align: left;
+    display: inline-block;
+    padding: 20px 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="content" id="en">
+    <h1>404</h1>
+    <p>The page you requested does not seem to exist.</p>
+    <div>
+      <p>This may be because...</p>
+      <ul>
+        <li>The page has either been moved or deleted.</li>
+        <li>The page you are looking for does not exist.</li>
+        <li>The redirect or link you used is broken.</li>
+        <li>The URL has not been typed in correctly.</li>
+      </ul>
+    </div>
+    <p><a href="https://natsuozawa.github.io">Click here to navigate to the main page</a></p>
+  </div>
+  <div class="content" id="ja">
+    <h1>404</h1>
+    <p>ページが見つかりませんでした。</p>
+    <div>
+      <ul>
+        <li>ページが移動、削除された</li>
+        <li>ページが存在しない</li>
+        <li>リンクにエラーがある</li>
+        <li>URLに間違いがあった</li>
+      </ul>
+      <p>可能性があります。再度お試しください。</p>
+    </div>
+    <p><a href="https://natsuozawa.github.io/jp">クリックするとホームページに戻ります。</a></p>
+  </div>
+  <script>
+  const lang = navigator.language;
+  if (lang === 'ja' || lang === 'ja-JP') {
+    document.getElementById('en').style.display = 'none';
+  } else {
+    document.getElementById('ja').style.display = 'none';
+  }
+  </script>
+</body>
+</html>
