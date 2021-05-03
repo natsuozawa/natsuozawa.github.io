@@ -121,9 +121,11 @@
     </div>
     <div id="see" class="last">
       <div class="blackbox">
-        <h1 class="big">This website is currently under construction.</h1>
-        <p class="message">I plan to host a variety of my projects here.</p>
-        <p class="message">Please be patient while I get set up.</p>
+        <h1 class="big">News</h1>
+        <div class="component" id="gpmb_index_root" style="text-align: left">
+          <h1>Sorry, nothing to see here!</h1>
+        </div>
+        <p class="message"><a href="news">See all</a></p>
       </div>
     </div>
   </div>
@@ -144,5 +146,13 @@
   <script src="jquery-1.12.4.min.js"></script>
   <script src="check.js"></script>
   <script src="down.js"></script>
+  <script src="gpmb.js"></script>
+  <script>
+    gpmb.load("natsuozawa", "news", function() {
+      var gpmbIndexRoot = document.getElementById("gpmb_index_root");
+      if (gpmb.entries.length > 0) gpmbIndexRoot.innerHTML = "";
+      gpmb.embed(gpmbIndexRoot, 0, 4);
+    });
+  </script>
 </body>
 </html>

@@ -116,9 +116,11 @@
     </div>
     <div id="see" class="last">
       <div class="blackbox">
-        <h1 class="big">本ウェブサイトは現在工事中です。</h1>
-        <p class="message">開発者としての作品や発信情報などを載せる予定です。</p>
-        <p class="message">用意できるまで、暫くお待ちください。</p>
+        <h1 class="big">新着情報</h1>
+        <div class="component" id="gpmb_index_root" style="text-align: left">
+          <h1>新着情報がありません。</h1>
+        </div>
+        <p class="message"><a href="information">一覧を見る</a></p>
       </div>
     </div>
   </div>
@@ -139,5 +141,13 @@
   <script src="../jquery-1.12.4.min.js"></script>
   <script src="../check.js"></script>
   <script src="../down.js"></script>
+  <script src="../gpmb.js"></script>
+  <script>
+    gpmb.load("natsuozawa", "information", function() {
+      var gpmbIndexRoot = document.getElementById("gpmb_index_root");
+      if (gpmb.entries.length > 0) gpmbIndexRoot.innerHTML = "";
+      gpmb.embed(gpmbIndexRoot, 0, 4, "ja-JP");
+    });
+  </script>
 </body>
 </html>
