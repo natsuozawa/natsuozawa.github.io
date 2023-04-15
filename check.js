@@ -25,7 +25,6 @@ if (platform === 'ok') {
 }
 
 if (platform === 'edge') {
-  $('.down').hide();
   $('.banner .blackbox').append('<hr></hr>');
 }
 

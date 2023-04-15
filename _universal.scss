@@ -83,22 +83,6 @@ hr {
   font-weight: 400;
 }
 
-//icons
-.down {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  background-position: center;
-}
-
-.down:hover {
-  transform: translateY(3px);
-}
-
-.down:active {
-  transform: translateY(8px);
-}
-
 //div types
 .component {
   width: 95%;
@@ -134,17 +118,6 @@ hr {
 
   h1 {
     text-transform: uppercase;
-  }
-
-  .down {
-    margin: auto;
-    background-image: url('../thumbnail/down-white.png');
-  }
-
-  @media only screen and (max-height: 240px) {
-    .down {
-      display: none;
-    }
   }
 }
 

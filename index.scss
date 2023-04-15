@@ -2,10 +2,6 @@
 @import '_header';
 @import '_footer';
 
-.down {
-  background-image: url('thumbnail/down.png');
-}
-
 #main {
   width: 95%;
   margin: auto;
@@ -30,14 +26,10 @@
       color: $link;
     }
 
-    .down {
-      position: relative;
-      top: 20px;
-    }
   }
 
   .right {
-    background-image: url('thumbnail/developer.png');
+    // background-image: url('thumbnail/developer.png');
     background-position: left top;
     margin-bottom: 20px;
   }
@@ -55,10 +47,6 @@
 
     .left > div {
       padding-top: 25vh;
-
-      .down {
-        left: 35%;
-      }
     }
 
     .right {
@@ -75,10 +63,6 @@
 
     .left > div {
       padding-top: 5vh;
-      
-      .down {
-        display: none;
-      }
     }
 
     .right {
@@ -103,12 +87,6 @@
   @media only screen and (max-height: 600px) {
     .left > div {
       padding-top: 5vh;
-    }
-  }
-
-  @media only screen and (max-height: 450px) {
-    .down {
-      display: none;
     }
   }
 }
