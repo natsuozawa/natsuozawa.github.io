@@ -18,6 +18,11 @@
       padding-left: 20px;
     }
 
+    img {
+      margin-left: 20px;
+      // Necessary to use margin here to prevent the image from deforming.
+    }
+
     a {
       color: inherit;
     }
@@ -29,7 +34,7 @@
   }
 
   .right {
-    // background-image: url('thumbnail/developer.png');
+    background-image: url('img/aiart.png');
     background-position: left top;
     margin-bottom: 20px;
   }

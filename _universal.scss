@@ -130,3 +130,11 @@ hr {
     margin-bottom: 20px;
   }
 }
+
+.avatar {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}

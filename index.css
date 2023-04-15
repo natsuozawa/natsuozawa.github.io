@@ -112,6 +112,14 @@ hr {
   margin-bottom: 20px;
 }
 
+.avatar {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
 #header-wrap {
   background-color: white;
   padding-bottom: 20px;
@@ -238,6 +246,9 @@ hr {
 #main .left h1, #main .left p {
   padding-left: 20px;
 }
+#main .left img {
+  margin-left: 20px;
+}
 #main .left a {
   color: inherit;
 }
@@ -245,6 +256,7 @@ hr {
   color: #a07318;
 }
 #main .right {
+  background-image: url("img/aiart.png");
   background-position: left top;
   margin-bottom: 20px;
 }
