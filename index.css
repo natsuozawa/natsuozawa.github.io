@@ -120,6 +120,13 @@ hr {
   object-position: center;
 }
 
+.link-img {
+  width: 60px;
+  object-fit: cover;
+  object-position: center;
+  margin: 30px;
+}
+
 #header-wrap {
   background-color: white;
   padding-bottom: 20px;
