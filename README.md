@@ -15,5 +15,5 @@ Note: the fixed footer is not supported in Microsoft Edge, Internet Explorer, or
 * This site uses jQuery 1.12.4 for a better experience.
 jQuery v1.12.4 | (c) JS Foundation and other contributors | jquery.org/license
 
-© 2018-2023 Natsu Ozawa
+© 2018-2024 Natsu Ozawa
 (Parts of the pages hosted on this website may be licensed separately.)
