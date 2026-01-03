@@ -12,8 +12,8 @@ Note: the fixed footer is not supported in Microsoft Edge, Internet Explorer, or
 * This website uses background images from pixabay.
 * This website uses icons from iconmonstr.
 * This website uses the Noto Sans Japanese font for both Japanese and English (early access).
-* This site uses jQuery 1.12.4 for a better experience.
-jQuery v1.12.4 | (c) JS Foundation and other contributors | jquery.org/license
+* This site uses jQuery for a better experience.
+jQuery v3.7.1 | (c) JS Foundation and other contributors | jquery.org/license
 
 © 2018-2026 Natsu Ozawa
 (Parts of the pages hosted on this website may be licensed separately.)
